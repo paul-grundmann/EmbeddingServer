@@ -7,7 +7,7 @@ from anyio import CapacityLimiter
 from anyio.lowlevel import RunVar
 from fastapi import FastAPI, File
 
-INDEX_SIZE = 120_000
+INDEX_SIZE = 1200_000
 initial_embeddings = np.random.rand(INDEX_SIZE, 768).astype('float32')
 index = faiss.IndexFlatL2(768)
 # build the index
